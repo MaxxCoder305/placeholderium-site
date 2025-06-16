@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Friends - Placeholderium</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body onload="loadFriends()">
+  <div id="top-bar">
+    <span class="logo">Placeholderium</span>
+    <div id="menu">
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+    </div>
+    <div id="user-box">
+      <span id="username-label">Guest</span>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div id="main-content">
+    <h2>Your Friends</h2>
+    <ul id="friendList"></ul>
+
+    <h3>Add a Friend</h3>
+    <input type="text" id="friendName" placeholder="Enter username">
+    <button onclick="addFriend()">Send Friend Request</button>
+  </div>
+</body>
+</html>

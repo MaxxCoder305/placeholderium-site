@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profile - Placeholderium</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body onload="loadProfile()">
+  <div id="top-bar">
+    <span class="logo">Placeholderium</span>
+    <div id="menu">
+      <a href="index.html">Home</a>
+      <a href="friends.html">Friends</a>
+    </div>
+    <div id="user-box">
+      <span id="username-label">Guest</span>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div id="main-content">
+    <div class="profile-card">
+      <img src="assets/avatar-guest.png" class="avatar" alt="Avatar">
+      <div class="profile-info">
+        <h2 id="profileName">Guest</h2>
+        <p><strong>Status:</strong> Just joined!</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
